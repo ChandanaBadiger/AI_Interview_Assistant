@@ -9,7 +9,7 @@ st.caption('Launched by ChandanaBadiger')
 st.write('Department of AI&DS')
 try:
   client = Groq(api_key=st.secrets['GROQ_API_KEY'])
-  st.caption('API CONNECTION SUCCESSFUL')
+  st.write('API CONNECTION SUCCESSFUL')
 except (KeyError,FileNotFoundError):
   st.error('GROQ_API_KEY is missing. Add it to Streamlit Cloud -> App Setting Secrets')
   st.stop()
